@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0a0017;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #6b1d98;
+  user-select: none;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;          
+}
+
+#starCanvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background: #0a0017;
+}
+
+#gameCanvas {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #7f00ffaa;
+  background: transparent;
+  z-index: 1;
+  flex-shrink: 0; 
+}
+
+#score {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 2;
+  pointer-events: none;
+  text-shadow: 0 0 8px #a88fc1;
+}
